@@ -14,7 +14,7 @@ our $term;
 
 # We may not get a terminal if we're running under an automatic build tool.
 eval {
-    Term::ReadLine->new("prompt");
+    $term = Term::ReadLine->new("prompt");
 };
 
 sub slurp {
